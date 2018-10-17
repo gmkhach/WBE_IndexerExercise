@@ -16,10 +16,7 @@ namespace WBE_IndexerExercise
 
         public bool this[int number]
         {
-            get
-            {
-                return !testOdd[number] ? true : false;
-            }
+            get => !testOdd[number];
         }
     }
 }
