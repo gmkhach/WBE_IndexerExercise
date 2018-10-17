@@ -10,13 +10,14 @@ using System.Threading.Tasks;
 
 namespace WBE_IndexerExercise
 {
-    class Program
+    class IsOdd
     {
-        static void Main(string[] args)
+        public bool this [int number]
         {
-            IsOdd test = new IsOdd();
-            Console.WriteLine(test[5]);
-            Console.WriteLine(test[22]);
+            get
+            {
+                return number % 2 == 1 ? true : false;
+            }
         }
     }
 }
