@@ -1,8 +1,4 @@
-﻿/*
- * Create a class called "IsOdd" that uses indexer to return true for odd numbers and false for even numbers. 
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +10,13 @@ namespace WBE_IndexerExercise
     {
         static void Main(string[] args)
         {
-            IsOdd test = new IsOdd();
-            Console.WriteLine(test[5]);
-            Console.WriteLine(test[22]);
+            IsOdd testOdd = new IsOdd();
+            Console.WriteLine(testOdd[5]);
+            Console.WriteLine(testOdd[22]);
+
+            IsEven testEven = new IsEven();
+            Console.WriteLine(testEven[5]);
+            Console.WriteLine(testEven[22]);
         }
     }
 }
